@@ -14208,3 +14208,24 @@ section>div {
 section:first-child>div {
   border-radius: 0 0 16px 16px;
 }
+
+/* Responsive Countdown Timer */
+.countdown-card {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 575px) {
+  .countdown-card {
+    width: 75px;
+    height: 75px;
+  }
+  .countdown-card h2 {
+    font-size: 1.6rem !important;
+  }
+  .countdown-card h6 {
+    font-size: 0.75rem !important;
+    margin-bottom: 0 !important;
+  }
+}
