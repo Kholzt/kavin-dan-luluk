@@ -1,1073 +1,841 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Wedding Of Kavin & Luluk</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      .vertical-line {
-        border-left: 1px solid rgb(255, 255, 255);
-        /* The thickness and color of the line */
-        height: 100px;
-        /* The height of the line */
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wedding Of Kavin & Luluk</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .vertical-line {
+      border-left: 1px solid rgb(255, 255, 255);
+      /* The thickness and color of the line */
+      height: 100px;
+      /* The height of the line */
+    }
+
+    body {
+      background-color: #fcf1f2;
+    }
+
+    .first-view {
+      transition: all 0.5s;
+    }
+
+    .hide-view {
+      bottom: -100% !important;
+      opacity: 0.5;
+      top: auto;
+    }
+
+    @media (min-width: 1190px) {
+      .container {
+        max-width: 60%;
+      }
+    }
+
+    :where(p, h1, h2, h3, h4, h5, h6) {
+      text-align: center;
+    }
+
+    .snowRoll {
+      position: absolute;
+      opacity: 0;
+      -webkit-animation-name: mysnow;
+      -webkit-animation-duration: 20s;
+      -moz-animation-name: mysnow;
+      -moz-animation-duration: 20s;
+      height: 80px;
+    }
+
+    @-webkit-keyframes mysnow {
+      0% {
+        bottom: 100%;
       }
 
-      body {
-        background-color: #cadfe1;
+      50% {
+        -webkit-transform: rotate(1080deg);
       }
 
-      .first-view {
-        transition: all 0.5s;
+      100% {
+        -webkit-transform: rotate(0deg) translate3d(50px, 50px, 50px);
+      }
+    }
+
+    @-moz-keyframes mysnow {
+      0% {
+        bottom: 100%;
       }
 
-      .hide-view {
-        bottom: -100% !important;
-        opacity: 0.5;
-        top: auto;
+      50% {
+        -moz-transform: rotate(1080deg);
       }
 
-      @media (min-width: 1190px) {
-        .container {
-          max-width: 60%;
-        }
+      100% {
+        -moz-transform: rotate(0deg) translate3d(50px, 50px, 50px);
       }
+    }
 
-      :where(p, h1, h2, h3, h4, h5, h6) {
-        text-align: center;
-      }
+    .bank-card {
+      transition:
+        transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        box-shadow 0.3s ease;
+    }
 
-      .snowRoll {
-        position: absolute;
-        opacity: 0;
-        -webkit-animation-name: mysnow;
-        -webkit-animation-duration: 20s;
-        -moz-animation-name: mysnow;
-        -moz-animation-duration: 20s;
-        height: 80px;
-      }
+    .bank-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 20px 35px rgba(0, 91, 170, 0.45) !important;
+    }
+  </style>
+</head>
 
-      @-webkit-keyframes mysnow {
-        0% {
-          bottom: 100%;
-        }
+<body>
+  <audio id="myAudio" src="./assets/backsound.mp3" type="audio/mpeg" loop="loop">
+    <source src="./assets/backsound.mp3" type="audio/mpeg" />
+    Your user agent does not support the HTML5 Audio element.
+  </audio>
+  <div id="snowflake"></div>
 
-        50% {
-          -webkit-transform: rotate(1080deg);
-        }
-
-        100% {
-          -webkit-transform: rotate(0deg) translate3d(50px, 50px, 50px);
-        }
-      }
-
-      @-moz-keyframes mysnow {
-        0% {
-          bottom: 100%;
-        }
-
-        50% {
-          -moz-transform: rotate(1080deg);
-        }
-
-        100% {
-          -moz-transform: rotate(0deg) translate3d(50px, 50px, 50px);
-        }
-      }
-
-      .bank-card {
-        transition:
-          transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-          box-shadow 0.3s ease;
-      }
-      .bank-card:hover {
-        transform: translateY(-6px) scale(1.02);
-        box-shadow: 0 20px 35px rgba(0, 91, 170, 0.45) !important;
-      }
-    </style>
-  </head>
-
-  <body>
-    <audio
-      id="myAudio"
-      src="./assets/backsound.mp3"
-      type="audio/mpeg"
-      loop="loop"
-    >
-      <source src="./assets/backsound.mp3" type="audio/mpeg" />
-      Your user agent does not support the HTML5 Audio element.
-    </audio>
-    <div id="snowflake"></div>
-
-    <!-- First View -->
-    <section
-      data-id="profile-picture"
-      class="d-flex show first-view position-fixed bottom-0 left-0 w-100 h-100 justify-content-center align-items-center flex-column"
-      style="
+  <!-- First View -->
+  <section data-id="profile-picture"
+    class="d-flex show first-view position-fixed bottom-0 left-0 w-100 h-100 justify-content-center align-items-center flex-column"
+    style="
         z-index: 10;
         background-image:
           linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-          url(assets/profil.jpg);
+          url('assets/img-1%20(3).jpeg');
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
-      "
-    >
-      <h4 class="text-white mb-2 comic-neue">The Wedding Of</h4>
-      <img
-        class="mb-4 object-fit-cover"
-        data-id="profile-picture"
-        src="assets/profil.jpg"
-        style="
+        background-position: center 40%;
+      ">
+    <h4 class="text-white mb-2 comic-neue">The Wedding Of</h4>
+    <img class="mb-4 object-fit-cover shadow-lg" data-id="profile-picture" src="assets/img-1%20(3).jpeg" style="
           width: 200px;
           height: 200px;
           border-radius: 50%;
-          object-position: top;
-        "
-        alt=""
-      />
-      <h1 class="great-vibes text-white">Kavin &amp; Luluk</h1>
-      <h6 class="text-white mb-4 comic-neue">Kpd. Bpk/Ibu/Saudara/I</h6>
-      <button
-        id="open-letter"
-        class="btn btn-primary rounded-pill px-4 py-2 text-white"
-      >
-        <i class="fa fa-envelope"></i> Buka Undangan
-      </button>
-    </section>
+          border: 4px solid #fff;
+          object-position: center;
+        " alt="Kavin and Luluk" />
+    <h1 class="great-vibes text-white">Kavin &amp; Luluk</h1>
+    <h6 class="text-white mb-4 comic-neue">Kpd. Bpk/Ibu/Saudara/I</h6>
+    <button id="open-letter" class="btn btn-primary rounded-pill px-4 py-2 text-white">
+      <i class="fa fa-envelope"></i> Buka Undangan
+    </button>
+  </section>
 
-    <!-- Second View -->
-    <main id="content">
-      <section class="" id="home">
-        <div
-          style="
+  <!-- Second View -->
+  <main id="content">
+    <section class="" id="home">
+      <div style="
             background-image:
               linear-gradient(
                 to bottom,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.4)
               ),
-              url(https://drive.google.com/thumbnail?id=image1.jpg);
+              url('assets/img-1%20(4).jpeg');
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-          "
-          class="container position-relative d-flex vh-100 justify-content-center align-items-center flex-column"
-        >
-          <h4 class="text-white mb-2 comic-neue">The Wedding</h4>
-          <h1 class="great-vibes text-white text-center">
-            Kavin <br />
-            & <br />
-            Luluk
-          </h1>
-          <h6 class="text-white mb-4 comic-neue">Kpd. Bpk/Ibu/Saudara/I</h6>
-          <div class="d-flex text-white align-items-center gap-4">
-            <h4>Rabu</h4>
-            <div class="vertical-line"></div>
-            <div class="text-center">
-              <h1 class="fw-bold">14</h1>
-              <h6>2026</h6>
-            </div>
-            <div class="vertical-line"></div>
-
-            <h4>Oktober</h4>
+          " class="container position-relative d-flex vh-100 justify-content-center align-items-center flex-column">
+        <h4 class="text-white mb-2 comic-neue">The Wedding</h4>
+        <h1 class="great-vibes text-white text-center">
+          Kavin <br />
+          & <br />
+          Luluk
+        </h1>
+        <h6 class="text-white mb-4 comic-neue">Kpd. Bpk/Ibu/Saudara/I</h6>
+        <div class="d-flex text-white align-items-center gap-4">
+          <h4>Rabu</h4>
+          <div class="vertical-line"></div>
+          <div class="text-center">
+            <h1 class="fw-bold">14</h1>
+            <h6>2026</h6>
           </div>
+          <div class="vertical-line"></div>
 
-          <img
-            src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
-            class="img-fluid position-absolute bottom-0 left-0"
-            alt=""
-          />
+          <h4>Oktober</h4>
         </div>
-      </section>
-      <section class="" id="mempelai">
-        <div
-          style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
-          class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column"
-        >
-          <img
-            style="width: 300px"
-            src="https://drive.google.com/thumbnail?id=12lQBmyZAmzW9zDpAHxKK5hvKM5_VgYlR&sz=w1000
-"
-            class="item-bottom"
-            alt=""
-          />
 
-          <h6 class="fw-bold item-bottom" style="margin-top: -40px">
-            Assalamu'alaikum Warahmatullaahi Wabarakaatuh
-          </h6>
-          <p class="text-center item-bottom">
-            Maha Suci Allah yang telah menciptakan makhluk-Nya
-            berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi
-            pernikahan kami.
-          </p>
-          <div class="row mb-5 w-100 item-bottom justify-content-center">
-            <div class="col-md-4 col-12 text-center">
-              <h2 class="mb-2 great-vibes fw-bold">Muhammad Kavin</h2>
-              <img
-                class="mb-2"
-                src="https://drive.google.com/thumbnail?id=1npRLS3pzkRR-WMI8mii0EbVL0mr5xwCa&sz=w1000"
-                alt=""
-              />
-              <p>
-                Putra Dari <br />
-                Wahyudi &amp; <br />
-                Jumaliya
-              </p>
-            </div>
-            <div class="col-md-4 item-bottom col-12 text-center">
-              <h2 class="mb-2 great-vibes fw-bold">Luluk Lutfia</h2>
-              <img
-                class="mb-2"
-                src="https://drive.google.com/thumbnail?id=1npRLS3pzkRR-WMI8mii0EbVL0mr5xwCa&sz=w1000"
-                alt=""
-              />
-              <p>
-                Putri Dari <br />
-                Nanang Eko Wahyudi &amp; <br />
-                Rukimah
-              </p>
-            </div>
-          </div>
-          <h5 class="mb-5 mt-5" data-id="event-date">Rabu, 14 Oktober 2026</h5>
-          <div class="row mb-5">
-            <div class="col">
-              <div
-                class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
-                style="width: 100px; height: 100px"
-              >
-                <h2 class="mb-0" id="days">00</h2>
-                <h6>Days</h6>
-              </div>
-            </div>
-            <div class="col">
-              <div
-                class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
-                style="width: 100px; height: 100px"
-              >
-                <h2 class="mb-0" id="hours">00</h2>
-                <h6>Hours</h6>
-              </div>
-            </div>
-            <div class="col">
-              <div
-                class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
-                style="width: 100px; height: 100px"
-              >
-                <h2 class="mb-0" id="minutes">00</h2>
-                <h6>Min</h6>
-              </div>
-            </div>
-            <div class="col">
-              <div
-                class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
-                style="width: 100px; height: 100px"
-              >
-                <h2 class="mb-0" id="seconds">00</h2>
-                <h6>Sec</h6>
-              </div>
-            </div>
-          </div>
-          <a
-            target="_blank"
-            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=The+Wedding+of+Kavin+%26+Luluk&dates=20261014T030000Z/20261014T060000Z&details=The+Wedding+of+Muhammad+Kavin+%26+Luluk+Lutfia&location=JL.+Bonsai,+Dusun+Krajan+II,+Padomasan,+Kec.+Jombang,+Kabupaten+Jember,+Jawa+Timur+68168"
-            class="btn btn-primary item-bottom-bounce rounded-pill mb-5 text-white px-4"
-            ><i class="fa fa-calendar"> </i> Ingatkan via Google Kalender</a
-          >
-
-          <img
-            src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
-            class="img-fluid position-absolute left-0"
-            style="z-index: 2; bottom: 0px"
-            alt=""
-          />
-
-          <img
-            src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
-            class="img-fluid position-absolute top-0 left-0"
-            style="z-index: 2"
-            alt=""
-          />
-
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="min-width: 150px; top: -20px; left: -7%; width: 30%"
-            alt=""
-          />
-
-          <img
-            src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe"
-            class="position-absolute"
-            style="min-width: 150px; top: -150px; right: -30%; width: 60%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -150px;
-              left: -30%;
-              width: 60%;
-              transform: rotate(180deg);
-            "
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -20px;
-              right: -7%;
-              width: 30%;
-              transform: rotate(200deg);
-            "
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="" id="acara">
-        <div
-          style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
-          class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="row mb-4 w-100 justify-content-center">
-            <div class="col-md-4 col-12">
-              <div
-                class="card item-bottom border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
-              >
-                <h1 class="great-vibes">Wedding Ceremony</h1>
-                <p class="mb-3">
-                  <i class="fa fa-calendar"></i> 14 Oktober 2026
-                </p>
-                <p class="mb-3">
-                  <i class="fa fa-clock"></i> 10:00 WIB - Selesai
-                </p>
-                <h5 class="fw-bold mb-3">Lokasi / Tempat Acara:</h5>
-                <p class="text-center">
-                  JL. Bonsai, Dusun Krajan II, Padomasan, Kec. Jombang,
-                  Kabupaten Jember, Jawa Timur 68168
-                </p>
-              </div>
-            </div>
-          </div>
-          <p
-            style="max-width: 100%; width: 800px"
-            class="text-center item-bottom"
-          >
-            Merupakan kehormatan serta kebahagiaan bagi kami sekeluarga apabila
-            Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada
-            kedua mempelai.
-          </p>
-          <p class="fw-bold item-bottom">
-            Jazakumullah Khairan Katsiran Wassalamuallaikum Warrahmatullahi
-            Wabarakatuh
-          </p>
-          <p class="fw-bold item-bottom">Kami yang berbahagia,</p>
-          <h1 class="great-vibes item-bottom">Kavin &amp; Luluk</h1>
-
-          <p class="fw-bold item-bottom">
-            Beserta keluarga besar kedua mempelai
-          </p>
-          <h1 class="great-vibes item-bottom">Denah Lokasi</h1>
-
-          <img
-            class="mb-5"
-            src="https://drive.google.com/thumbnail?id=1npRLS3pzkRR-WMI8mii0EbVL0mr5xwCa"
-            alt=""
-          />
-          <div
-            class="mb-4 item-bottom-zoom"
-            style="max-width: 100%; width: 600px; aspect-ratio: 3/2"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1786258432574!6m8!1m7!1sdQZNomYfzfoE5yt9EvEMHg!2m2!1d-8.228592065111151!2d113.3187974261797!3f79!4f-23.790000000000006!5f0.7820865974627469"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-
-          <a
-            href="https://maps.app.goo.gl/etZirSoi4ZBMfvN87"
-            class="btn btn-primary item-bottom-bounce rounded-pill mb-5 text-white px-4"
-            target="_blank"
-          >
-            <i class="fa fa-map"></i> Lihat lokasi acara
-          </a>
-          <img
-            src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
-            class="img-fluid position-absolute left-0"
-            style="z-index: 2; bottom: 0px"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
-            class="img-fluid position-absolute top-0 left-0"
-            style="z-index: 2"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="min-width: 150px; top: -20px; left: -7%; width: 30%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe"
-            class="position-absolute"
-            style="min-width: 150px; top: -150px; right: -30%; width: 60%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -150px;
-              left: -30%;
-              width: 60%;
-              transform: rotate(180deg);
-            "
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -20px;
-              right: -7%;
-              width: 30%;
-              transform: rotate(200deg);
-            "
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="">
-        <div
-          style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
-          class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column"
-        >
-          <h4
-            class="fw-bold text-center item-bottom"
-            style="max-width: 100%; width: 600px"
-          >
-            وَمِنۡ اٰيٰتِهٖۤ اَنۡ خَلَقَ لَكُمۡ مِّنۡ اَنۡفُسِكُمۡ اَزۡوَاجًا
-            لِّتَسۡكُنُوۡۤا اِلَيۡهَا وَجَعَلَ بَيۡنَكُمۡ مَّوَدَّةً
-            وَّرَحۡمَةً  ؕ اِنَّ فِىۡ ذٰ لِكَ لَاٰيٰتٍ لِّقَوۡمٍ
-            يَّتَفَكَّرُوۡنَ
-          </h4>
-          <p
-            class="text-center item-bottom"
-            style="max-width: 100%; width: 600px"
-          >
-            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
-            untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan
-            merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih
-            dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
-            tanda-tanda bagi kaum yang berpikir.”
-          </p>
-          <h6 class="fw-bold item-bottom">QS Ar-Rum: 21</h6>
-
-          <img
-            src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
-            class="img-fluid position-absolute left-0"
-            style="z-index: 2; bottom: 0px"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
-            class="img-fluid position-absolute top-0 left-0"
-            style="z-index: 2"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="min-width: 150px; top: -20px; left: -7%; width: 30%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe"
-            class="position-absolute"
-            style="min-width: 150px; top: -150px; right: -30%; width: 60%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -150px;
-              left: -30%;
-              width: 60%;
-              transform: rotate(180deg);
-            "
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -20px;
-              right: -7%;
-              width: 30%;
-              transform: rotate(200deg);
-            "
-            alt=""
-          />
-        </div>
-      </section>
-
-      <section class="" id="rekening">
-        <div
-          style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
-          class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column"
-        >
-          <h1 class="great-vibes item-bottom mb-2">Amplop Digital</h1>
-          <p
-            class="text-center item-bottom mb-5"
-            style="max-width: 100%; width: 600px; color: #555"
-          >
-            Bagi Bapak/Ibu/Saudara/i yang ingin memberikan hadiah kepada kedua
-            mempelai, dapat melalui nomor rekening berikut:
-          </p>
-
-          <div
-            class="row w-100 justify-content-center gap-4 item-bottom"
-            style="max-width: 100%; width: 780px"
-          >
-            <!-- Kartu Rekening Luluk Lutfia -->
-            <div class="col-md-5 col-12 mb-3">
-              <div
-                class="bank-card p-4 position-relative text-white overflow-hidden"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    #06264c 0%,
-                    #005baa 60%,
-                    #0088ff 100%
-                  );
-                  border-radius: 20px;
-                  box-shadow: 0 14px 28px rgba(0, 91, 170, 0.35);
-                  border: 1px solid rgba(255, 255, 255, 0.25);
-                  min-height: 220px;
-                "
-              >
-                <!-- Card Background Wave Effect -->
-                <div
-                  style="
-                    position: absolute;
-                    top: -60px;
-                    right: -60px;
-                    width: 170px;
-                    height: 170px;
-                    background: rgba(255, 255, 255, 0.12);
-                    border-radius: 50%;
-                    pointer-events: none;
-                  "
-                ></div>
-                <div
-                  style="
-                    position: absolute;
-                    bottom: -80px;
-                    left: -50px;
-                    width: 200px;
-                    height: 200px;
-                    background: rgba(0, 212, 255, 0.18);
-                    border-radius: 50%;
-                    pointer-events: none;
-                  "
-                ></div>
-
-                <!-- Top Header: Logo & Contactless -->
-                <div
-                  class="d-flex justify-content-between align-items-center mb-4 position-relative"
-                  style="z-index: 2"
-                >
-                  <div
-                    style="
-                      background: rgba(255, 255, 255, 0.95);
-                      padding: 4px 14px;
-                      border-radius: 8px;
-                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-                    "
-                  >
-                    <span
-                      style="
-                        color: #005baa;
-                        font-weight: 900;
-                        font-size: 1.15rem;
-                        font-family: sans-serif;
-                        letter-spacing: 1px;
-                      "
-                      >BCA</span
-                    >
-                  </div>
-                  <i
-                    class="fa-solid fa-wifi"
-                    style="
-                      transform: rotate(90deg);
-                      font-size: 1.3rem;
-                      opacity: 0.85;
-                    "
-                  ></i>
-                </div>
-
-                <!-- SIM Chip -->
-                <div class="mb-3 position-relative" style="z-index: 2">
-                  <div
-                    style="
-                      width: 44px;
-                      height: 32px;
-                      background: linear-gradient(135deg, #ffe066, #d4af37);
-                      border-radius: 6px;
-                      border: 1px solid #b38f00;
-                      position: relative;
-                      overflow: hidden;
-                      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-                    "
-                  >
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        right: 0;
-                        height: 1px;
-                        background: #997a00;
-                      "
-                    ></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 35%;
-                        width: 1px;
-                        background: #997a00;
-                      "
-                    ></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 35%;
-                        width: 1px;
-                        background: #997a00;
-                      "
-                    ></div>
-                  </div>
-                </div>
-
-                <!-- Account Number & Copy Button -->
-                <div class="mb-3 position-relative" style="z-index: 2">
-                  <span
-                    class="d-block text-uppercase"
-                    style="
-                      font-size: 0.7rem;
-                      letter-spacing: 1.5px;
-                      color: rgba(255, 255, 255, 0.75);
-                    "
-                    >Nomor Rekening</span
-                  >
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <span
-                      id="norek-luluk"
-                      style="
-                        font-family:
-                          &quot;Courier New&quot;, Courier, monospace;
-                        font-size: 1.35rem;
-                        font-weight: 700;
-                        letter-spacing: 2px;
-                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-                      "
-                      >1470807152</span
-                    >
-                    <button
-                      onclick="copyRekening('norek-luluk', this)"
-                      class="btn btn-sm rounded-pill px-3 py-1 text-white border-0"
-                      style="
-                        background: rgba(255, 255, 255, 0.22);
-                        backdrop-filter: blur(8px);
-                        font-size: 0.78rem;
-                        transition: all 0.3s;
-                      "
-                    >
-                      <i class="fa-regular fa-copy"></i> Salin
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Account Holder -->
-                <div class="position-relative" style="z-index: 2">
-                  <span
-                    class="d-block text-uppercase"
-                    style="
-                      font-size: 0.7rem;
-                      letter-spacing: 1.5px;
-                      color: rgba(255, 255, 255, 0.75);
-                    "
-                    >Atas Nama</span
-                  >
-                  <span
-                    class="fw-bold d-block text-uppercase"
-                    style="
-                      font-size: 1.05rem;
-                      letter-spacing: 1.5px;
-                      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-                    "
-                    >LULUK LUTFIA</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Kartu Rekening Muhammad Kavin -->
-            <div class="col-md-5 col-12 mb-3">
-              <div
-                class="bank-card p-4 position-relative text-white overflow-hidden"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    #0b1e36 0%,
-                    #0d47a1 60%,
-                    #1976d2 100%
-                  );
-                  border-radius: 20px;
-                  box-shadow: 0 14px 28px rgba(13, 71, 161, 0.35);
-                  border: 1px solid rgba(255, 255, 255, 0.25);
-                  min-height: 220px;
-                "
-              >
-                <!-- Card Background Wave Effect -->
-                <div
-                  style="
-                    position: absolute;
-                    top: -60px;
-                    right: -60px;
-                    width: 170px;
-                    height: 170px;
-                    background: rgba(255, 255, 255, 0.12);
-                    border-radius: 50%;
-                    pointer-events: none;
-                  "
-                ></div>
-                <div
-                  style="
-                    position: absolute;
-                    bottom: -80px;
-                    left: -50px;
-                    width: 200px;
-                    height: 200px;
-                    background: rgba(33, 150, 243, 0.22);
-                    border-radius: 50%;
-                    pointer-events: none;
-                  "
-                ></div>
-
-                <!-- Top Header: Logo & Contactless -->
-                <div
-                  class="d-flex justify-content-between align-items-center mb-4 position-relative"
-                  style="z-index: 2"
-                >
-                  <div
-                    style="
-                      background: rgba(255, 255, 255, 0.95);
-                      padding: 4px 14px;
-                      border-radius: 8px;
-                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-                    "
-                  >
-                    <span
-                      style="
-                        color: #005baa;
-                        font-weight: 900;
-                        font-size: 1.15rem;
-                        font-family: sans-serif;
-                        letter-spacing: 1px;
-                      "
-                      >BCA</span
-                    >
-                  </div>
-                  <i
-                    class="fa-solid fa-wifi"
-                    style="
-                      transform: rotate(90deg);
-                      font-size: 1.3rem;
-                      opacity: 0.85;
-                    "
-                  ></i>
-                </div>
-
-                <!-- SIM Chip -->
-                <div class="mb-3 position-relative" style="z-index: 2">
-                  <div
-                    style="
-                      width: 44px;
-                      height: 32px;
-                      background: linear-gradient(135deg, #ffe066, #d4af37);
-                      border-radius: 6px;
-                      border: 1px solid #b38f00;
-                      position: relative;
-                      overflow: hidden;
-                      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-                    "
-                  >
-                    <div
-                      style="
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        right: 0;
-                        height: 1px;
-                        background: #997a00;
-                      "
-                    ></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 35%;
-                        width: 1px;
-                        background: #997a00;
-                      "
-                    ></div>
-                    <div
-                      style="
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 35%;
-                        width: 1px;
-                        background: #997a00;
-                      "
-                    ></div>
-                  </div>
-                </div>
-
-                <!-- Account Number & Copy Button -->
-                <div class="mb-3 position-relative" style="z-index: 2">
-                  <span
-                    class="d-block text-uppercase"
-                    style="
-                      font-size: 0.7rem;
-                      letter-spacing: 1.5px;
-                      color: rgba(255, 255, 255, 0.75);
-                    "
-                    >Nomor Rekening</span
-                  >
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <span
-                      id="norek-kavin"
-                      style="
-                        font-family:
-                          &quot;Courier New&quot;, Courier, monospace;
-                        font-size: 1.35rem;
-                        font-weight: 700;
-                        letter-spacing: 2px;
-                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-                      "
-                      >7725789921</span
-                    >
-                    <button
-                      onclick="copyRekening('norek-kavin', this)"
-                      class="btn btn-sm rounded-pill px-3 py-1 text-white border-0"
-                      style="
-                        background: rgba(255, 255, 255, 0.22);
-                        backdrop-filter: blur(8px);
-                        font-size: 0.78rem;
-                        transition: all 0.3s;
-                      "
-                    >
-                      <i class="fa-regular fa-copy"></i> Salin
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Account Holder -->
-                <div class="position-relative" style="z-index: 2">
-                  <span
-                    class="d-block text-uppercase"
-                    style="
-                      font-size: 0.7rem;
-                      letter-spacing: 1.5px;
-                      color: rgba(255, 255, 255, 0.75);
-                    "
-                    >Atas Nama</span
-                  >
-                  <span
-                    class="fw-bold d-block text-uppercase"
-                    style="
-                      font-size: 1.05rem;
-                      letter-spacing: 1.5px;
-                      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-                    "
-                    >MUHAMMAD KAVIN</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <script>
-            function copyRekening(id, btn) {
-              const text = document.getElementById(id).textContent.trim();
-              navigator.clipboard.writeText(text).then(() => {
-                const original = btn.innerHTML;
-                btn.innerHTML = '<i class="fa fa-check"></i> Tersalin!';
-                btn.style.background = "#28a745";
-                setTimeout(() => {
-                  btn.innerHTML = original;
-                  btn.style.background = "rgba(255,255,255,0.22)";
-                }, 2000);
-              });
-            }
-          </script>
-
-          <img
-            src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
-            class="img-fluid position-absolute left-0"
-            style="z-index: 2; bottom: 0px"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
-            class="img-fluid position-absolute top-0 left-0"
-            style="z-index: 2"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="min-width: 150px; top: -20px; left: -7%; width: 30%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe"
-            class="position-absolute"
-            style="min-width: 150px; top: -150px; right: -30%; width: 60%"
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -150px;
-              left: -30%;
-              width: 60%;
-              transform: rotate(180deg);
-            "
-            alt=""
-          />
-          <img
-            src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd"
-            class="position-absolute"
-            style="
-              min-width: 150px;
-              bottom: -20px;
-              right: -7%;
-              width: 30%;
-              transform: rotate(200deg);
-            "
-            alt=""
-          />
-        </div>
-      </section>
-    </main>
-    <!-- <br /><br /><br /><br /> -->
-    <br /><br /><br /><br />
-
-    <nav class="position-fixed bottom-0 left-0 w-100" style="z-index: 3">
-      <div class="container bg-white h-100">
-        <ul class="d-flex list-unstyled m-0 py-2 px-4 justify-content-around">
-          <li>
-            <a
-              class="d-flex flex-column align-items-center text-decoration-none"
-              href=" #home"
-              ><i class="fa fa-house"></i> Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="d-flex flex-column align-items-center text-decoration-none"
-              href=" #mempelai"
-              ><i class="fa fa-heart"></i> Mempelai</a
-            >
-          </li>
-          <li>
-            <a
-              class="d-flex flex-column align-items-center text-decoration-none"
-              href=" #acara"
-              ><i class="fa fa-calendar"></i> Acara</a
-            >
-          </li>
-          <li>
-            <a
-              class="d-flex flex-column align-items-center text-decoration-none"
-              href=" #rekening"
-              ><i class="fa fa-credit-card"></i> Amplop</a
-            >
-          </li>
-        </ul>
+        <!-- <img src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
+          class="img-fluid position-absolute bottom-0 left-0" alt="" /> -->
       </div>
-    </nav>
+    </section>
+    <section class="" id="mempelai">
+      <div style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
+        class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column">
+        <img style="width: 300px" src="https://drive.google.com/thumbnail?id=12lQBmyZAmzW9zDpAHxKK5hvKM5_VgYlR&sz=w1000
+" class="item-bottom" alt="" />
 
-    <button
-      id="musicToggle"
-      class="shadow-sm btn btn-light rounded-circle position-fixed"
-      style="top: 50%; right: 20px; transform: translateY(-50%)"
-    >
-      <i class="fa fa-pause"></i>
-    </button>
+        <h6 class="fw-bold item-bottom" style="margin-top: -40px">
+          Assalamu'alaikum Warahmatullaahi Wabarakaatuh
+        </h6>
+        <p class="text-center item-bottom">
+          Maha Suci Allah yang telah menciptakan makhluk-Nya
+          berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi
+          pernikahan kami.
+        </p>
+        <div class="row mb-5 w-100 item-bottom justify-content-center">
+          <div class="col-md-4 col-12 text-center">
+            <h2 class="mb-2 great-vibes fw-bold">Muhammad Kavin</h2>
+            <img class="mb-4 object-fit-cover shadow"
+              style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #fff;"
+              src="assets/img-1%20(1).jpeg" alt="Muhammad Kavin" />
+            <p>
+              Putra Dari <br />
+              Wahyudi &amp; <br />
+              Jumaliya
+            </p>
+          </div>
+          <div class="col-md-4 item-bottom col-12 text-center">
+            <h2 class="mb-2 great-vibes fw-bold">Luluk Lutfia</h2>
+            <img class="mb-4 object-fit-cover shadow"
+              style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #fff;"
+              src="assets/img-1%20(2).jpeg" alt="Luluk Lutfia" />
+            <p>
+              Putri Dari <br />
+              Nanang Eko Wahyudi &amp; <br />
+              Rukimah
+            </p>
+          </div>
+        </div>
+        <h5 class="mb-5 mt-5" data-id="event-date">Rabu, 14 Oktober 2026</h5>
+        <div class="row mb-5">
+          <div class="col">
+            <div
+              class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
+              style="width: 100px; height: 100px">
+              <h2 class="mb-0" id="days">00</h2>
+              <h6>Days</h6>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
+              style="width: 100px; height: 100px">
+              <h2 class="mb-0" id="hours">00</h2>
+              <h6>Hours</h6>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
+              style="width: 100px; height: 100px">
+              <h2 class="mb-0" id="minutes">00</h2>
+              <h6>Min</h6>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center"
+              style="width: 100px; height: 100px">
+              <h2 class="mb-0" id="seconds">00</h2>
+              <h6>Sec</h6>
+            </div>
+          </div>
+        </div>
+        <a target="_blank"
+          href="https://calendar.google.com/calendar/u/0/r/eventedit?text=The+Wedding+of+Kavin+%26+Luluk&dates=20261014T030000Z/20261014T060000Z&details=The+Wedding+of+Muhammad+Kavin+%26+Luluk+Lutfia&location=JL.+Bonsai,+Dusun+Krajan+II,+Padomasan,+Kec.+Jombang,+Kabupaten+Jember,+Jawa+Timur+68168"
+          class="btn btn-primary item-bottom-bounce rounded-pill mb-5 text-white px-4"><i class="fa fa-calendar"> </i>
+          Ingatkan via Google Kalender</a>
 
-    <script src="./script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- <img src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
+          class="img-fluid position-absolute left-0" style="z-index: 2; bottom: 0px" alt="" /> -->
 
-    <!-- <script src="./assets/bootstrap/js/bootstrap.min.js"></script> -->
+        <!-- <img src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
+          class="img-fluid position-absolute top-0 left-0" style="z-index: 2" alt="" /> -->
 
-    <script>
-      // variable Event
-      const date = "2026-10-14 10:00:00";
-      const profilePicture = "assets/profil.jpg";
-    </script>
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="min-width: 150px; top: -20px; left: -7%; width: 30%" alt="" />
 
-    <script>
-      const showComment = () => {
-        fetch("/comments")
-          .then((json) => json.json())
-          .then((data) => {
-            let html = "";
-            data.forEach((d) => {
-              const date = new Date(d.created); // Format ISO (YYYY-MM-DD)
-              const dateFormat = date.toLocaleDateString("id-ID");
+        <img src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe" class="position-absolute"
+          style="min-width: 150px; top: -150px; right: -30%; width: 60%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -150px;
+              left: -30%;
+              width: 60%;
+              transform: rotate(180deg);
+            " alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -20px;
+              right: -7%;
+              width: 30%;
+              transform: rotate(200deg);
+            " alt="" />
+      </div>
+    </section>
+    <section class="" id="acara">
+      <div style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
+        class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column">
+        <div class="row mb-4 w-100 justify-content-center">
+          <div class="col-md-4 col-12">
+            <div
+              class="card item-bottom border-0 shadow-sm justify-content-center d-flex flex-column align-items-center">
+              <h1 class="great-vibes">Wedding Ceremony</h1>
+              <p class="mb-3">
+                <i class="fa fa-calendar"></i> 14 Oktober 2026
+              </p>
+              <p class="mb-3">
+                <i class="fa fa-clock"></i> 10:00 WIB - Selesai
+              </p>
+              <h5 class="fw-bold mb-3">Lokasi / Tempat Acara:</h5>
+              <p class="text-center">
+                JL. Bonsai, Dusun Krajan II, Padomasan, Kec. Jombang,
+                Kabupaten Jember, Jawa Timur 68168
+              </p>
+            </div>
+          </div>
+        </div>
+        <p style="max-width: 100%; width: 800px" class="text-center item-bottom">
+          Merupakan kehormatan serta kebahagiaan bagi kami sekeluarga apabila
+          Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada
+          kedua mempelai.
+        </p>
+        <p class="fw-bold item-bottom">
+          Jazakumullah Khairan Katsiran Wassalamuallaikum Warrahmatullahi
+          Wabarakatuh
+        </p>
+        <p class="fw-bold item-bottom">Kami yang berbahagia,</p>
+        <h1 class="great-vibes item-bottom">Kavin &amp; Luluk</h1>
 
-              html += `<li class="border-b  mb-2 item-bottom">
+        <p class="fw-bold item-bottom">
+          Beserta keluarga besar kedua mempelai
+        </p>
+        <h1 class="great-vibes item-bottom">Denah Lokasi</h1>
+
+        <img class="mb-5" src="https://drive.google.com/thumbnail?id=1npRLS3pzkRR-WMI8mii0EbVL0mr5xwCa" alt="" />
+        <div class="mb-4 item-bottom-zoom" style="max-width: 100%; width: 600px; aspect-ratio: 3/2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1786258432574!6m8!1m7!1sdQZNomYfzfoE5yt9EvEMHg!2m2!1d-8.228592065111151!2d113.3187974261797!3f79!4f-23.790000000000006!5f0.7820865974627469"
+            width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <a href="https://maps.app.goo.gl/etZirSoi4ZBMfvN87"
+          class="btn btn-primary item-bottom-bounce rounded-pill mb-5 text-white px-4" target="_blank">
+          <i class="fa fa-map"></i> Lihat lokasi acara
+        </a>
+        <!-- <img src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
+          class="img-fluid position-absolute left-0" style="z-index: 2; bottom: 0px" alt="" /> -->
+        <!-- <img src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
+          class="img-fluid position-absolute top-0 left-0" style="z-index: 2" alt="" /> -->
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="min-width: 150px; top: -20px; left: -7%; width: 30%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe" class="position-absolute"
+          style="min-width: 150px; top: -150px; right: -30%; width: 60%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -150px;
+              left: -30%;
+              width: 60%;
+              transform: rotate(180deg);
+            " alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -20px;
+              right: -7%;
+              width: 30%;
+              transform: rotate(200deg);
+            " alt="" />
+      </div>
+    </section>
+    <section class="">
+      <div style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
+        class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column">
+        <h4 class="fw-bold text-center item-bottom" style="max-width: 100%; width: 600px">
+          وَمِنۡ اٰيٰتِهٖۤ اَنۡ خَلَقَ لَكُمۡ مِّنۡ اَنۡفُسِكُمۡ اَزۡوَاجًا
+          لِّتَسۡكُنُوۡۤا اِلَيۡهَا وَجَعَلَ بَيۡنَكُمۡ مَّوَدَّةً
+          وَّرَحۡمَةً  ؕ اِنَّ فِىۡ ذٰ لِكَ لَاٰيٰتٍ لِّقَوۡمٍ
+          يَّتَفَكَّرُوۡنَ
+        </h4>
+        <p class="text-center item-bottom" style="max-width: 100%; width: 600px">
+          “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+          untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan
+          merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih
+          dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+          tanda-tanda bagi kaum yang berpikir.”
+        </p>
+        <h6 class="fw-bold item-bottom">QS Ar-Rum: 21</h6>
+
+        <!-- <img src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
+          class="img-fluid position-absolute left-0" style="z-index: 2; bottom: 0px" alt="" /> -->
+        <!-- <img src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
+          class="img-fluid position-absolute top-0 left-0" style="z-index: 2" alt="" /> -->
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="min-width: 150px; top: -20px; left: -7%; width: 30%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe" class="position-absolute"
+          style="min-width: 150px; top: -150px; right: -30%; width: 60%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -150px;
+              left: -30%;
+              width: 60%;
+              transform: rotate(180deg);
+            " alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -20px;
+              right: -7%;
+              width: 30%;
+              transform: rotate(200deg);
+            " alt="" />
+      </div>
+    </section>
+
+    <section class="" id="galeri">
+      <div style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
+        class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column">
+        <h1 class="great-vibes item-bottom mb-2 text-center">Galeri Kami</h1>
+        <p class="text-center item-bottom mb-5" style="max-width: 100%; width: 600px; color: #555">
+          Momen bahagia kami yang terukir menjadi sebuah kenangan yang tak terlupakan.
+        </p>
+
+        <div class="gallery-grid w-100 item-bottom" style="max-width: 1000px; position: relative; z-index: 3;">
+          <div class="gallery-item">
+            <img src="assets/img-1%20(1).jpeg" alt="Moment 1" loading="lazy" />
+            <div class="gallery-overlay">
+              <span>Our Love</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img-1%20(2).jpeg" alt="Moment 2" loading="lazy" />
+            <div class="gallery-overlay">
+              <span>Happiness</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img-1%20(3).jpeg" alt="Moment 3" loading="lazy" />
+            <div class="gallery-overlay">
+              <span>Together</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img-1%20(4).jpeg" alt="Moment 4" loading="lazy" />
+            <div class="gallery-overlay">
+              <span>Forever</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <img src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
+          class="img-fluid position-absolute left-0" style="z-index: 2; bottom: 0px" alt="" /> -->
+        <!-- <img src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
+          class="img-fluid position-absolute top-0 left-0" style="z-index: 2" alt="" /> -->
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="min-width: 150px; top: -20px; left: -7%; width: 30%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe" class="position-absolute"
+          style="min-width: 150px; top: -150px; right: -30%; width: 60%" alt="" />
+      </div>
+    </section>
+
+    <section class="" id="rekening">
+      <div style="min-height: 500px; padding-top: 7rem; padding-bottom: 7rem"
+        class="container overflow-hidden bg-white position-relative d-flex justify-content-center align-items-center flex-column">
+        <h1 class="great-vibes item-bottom mb-2">Amplop Digital</h1>
+        <p class="text-center item-bottom mb-5" style="max-width: 100%; width: 600px; color: #555">
+          Bagi Bapak/Ibu/Saudara/i yang ingin memberikan hadiah kepada kedua
+          mempelai, dapat melalui nomor rekening berikut:
+        </p>
+
+        <div class="row w-100 justify-content-center gap-4 item-bottom" style="max-width: 100%; width: 780px">
+          <!-- Kartu Rekening Luluk Lutfia -->
+          <div class="col-md-5 col-12 mb-3">
+            <div class="bank-card p-4 position-relative text-white overflow-hidden" style="
+                  background: linear-gradient(
+                    135deg,
+                    #4e1519 0%,
+                    #9C2A32 60%,
+                    #d7a9ac 100%
+                  );
+                  border-radius: 20px;
+                  box-shadow: 0 14px 28px rgba(156, 42, 50, 0.35);
+                  border: 1px solid rgba(255, 255, 255, 0.25);
+                  min-height: 220px;
+                ">
+              <!-- Card Background Wave Effect -->
+              <div style="
+                    position: absolute;
+                    top: -60px;
+                    right: -60px;
+                    width: 170px;
+                    height: 170px;
+                    background: rgba(255, 255, 255, 0.12);
+                    border-radius: 50%;
+                    pointer-events: none;
+                  "></div>
+              <div style="
+                    position: absolute;
+                    bottom: -80px;
+                    left: -50px;
+                    width: 200px;
+                    height: 200px;
+                    background: rgba(255, 100, 100, 0.18);
+                    border-radius: 50%;
+                    pointer-events: none;
+                  "></div>
+
+              <!-- Top Header: Logo & Contactless -->
+              <div class="d-flex justify-content-between align-items-center mb-4 position-relative" style="z-index: 2">
+                <div style="
+                      background: rgba(255, 255, 255, 0.95);
+                      padding: 4px 14px;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                    ">
+                  <span style="
+                        color: #9C2A32;
+                        font-weight: 900;
+                        font-size: 1.15rem;
+                        font-family: sans-serif;
+                        letter-spacing: 1px;
+                      ">BCA</span>
+                </div>
+                <i class="fa-solid fa-wifi" style="
+                      transform: rotate(90deg);
+                      font-size: 1.3rem;
+                      opacity: 0.85;
+                    "></i>
+              </div>
+
+              <!-- SIM Chip -->
+              <div class="mb-3 position-relative" style="z-index: 2">
+                <div style="
+                      width: 44px;
+                      height: 32px;
+                      background: linear-gradient(135deg, #ffe066, #d4af37);
+                      border-radius: 6px;
+                      border: 1px solid #b38f00;
+                      position: relative;
+                      overflow: hidden;
+                      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+                    ">
+                  <div style="
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        height: 1px;
+                        background: #997a00;
+                      "></div>
+                  <div style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 35%;
+                        width: 1px;
+                        background: #997a00;
+                      "></div>
+                  <div style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 35%;
+                        width: 1px;
+                        background: #997a00;
+                      "></div>
+                </div>
+              </div>
+
+              <!-- Account Number & Copy Button -->
+              <div class="mb-3 position-relative" style="z-index: 2">
+                <span class="d-block text-uppercase" style="
+                      font-size: 0.7rem;
+                      letter-spacing: 1.5px;
+                      color: rgba(255, 255, 255, 0.75);
+                    ">Nomor Rekening</span>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span id="norek-luluk" style="
+                        font-family:
+                          &quot;Courier New&quot;, Courier, monospace;
+                        font-size: 1.35rem;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                      ">1470807152</span>
+                  <button onclick="copyRekening('norek-luluk', this)"
+                    class="btn btn-sm rounded-pill px-3 py-1 text-white border-0" style="
+                        background: rgba(255, 255, 255, 0.22);
+                        backdrop-filter: blur(8px);
+                        font-size: 0.78rem;
+                        transition: all 0.3s;
+                      ">
+                    <i class="fa-regular fa-copy"></i> Salin
+                  </button>
+                </div>
+              </div>
+
+              <!-- Account Holder -->
+              <div class="position-relative" style="z-index: 2">
+                <span class="d-block text-uppercase" style="
+                      font-size: 0.7rem;
+                      letter-spacing: 1.5px;
+                      color: rgba(255, 255, 255, 0.75);
+                    ">Atas Nama</span>
+                <span class="fw-bold d-block text-uppercase" style="
+                      font-size: 1.05rem;
+                      letter-spacing: 1.5px;
+                      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+                    ">LULUK LUTFIA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu Rekening Muhammad Kavin -->
+          <div class="col-md-5 col-12 mb-3">
+            <div class="bank-card p-4 position-relative text-white overflow-hidden" style="
+                  background: linear-gradient(
+                    135deg,
+                    #4e1519 0%,
+                    #9C2A32 60%,
+                    #d7a9ac 100%
+                  );
+                  border-radius: 20px;
+                  box-shadow: 0 14px 28px rgba(156, 42, 50, 0.35);
+                  border: 1px solid rgba(255, 255, 255, 0.25);
+                  min-height: 220px;
+                ">
+              <!-- Card Background Wave Effect -->
+              <div style="
+                    position: absolute;
+                    top: -60px;
+                    right: -60px;
+                    width: 170px;
+                    height: 170px;
+                    background: rgba(255, 255, 255, 0.12);
+                    border-radius: 50%;
+                    pointer-events: none;
+                  "></div>
+              <div style="
+                    position: absolute;
+                    bottom: -80px;
+                    left: -50px;
+                    width: 200px;
+                    height: 200px;
+                    background: rgba(255, 100, 100, 0.18);
+                    border-radius: 50%;
+                    pointer-events: none;
+                  "></div>
+
+              <!-- Top Header: Logo & Contactless -->
+              <div class="d-flex justify-content-between align-items-center mb-4 position-relative" style="z-index: 2">
+                <div style="
+                      background: rgba(255, 255, 255, 0.95);
+                      padding: 4px 14px;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                    ">
+                  <span style="
+                        color: #9C2A32;
+                        font-weight: 900;
+                        font-size: 1.15rem;
+                        font-family: sans-serif;
+                        letter-spacing: 1px;
+                      ">BCA</span>
+                </div>
+                <i class="fa-solid fa-wifi" style="
+                      transform: rotate(90deg);
+                      font-size: 1.3rem;
+                      opacity: 0.85;
+                    "></i>
+              </div>
+
+              <!-- SIM Chip -->
+              <div class="mb-3 position-relative" style="z-index: 2">
+                <div style="
+                      width: 44px;
+                      height: 32px;
+                      background: linear-gradient(135deg, #ffe066, #d4af37);
+                      border-radius: 6px;
+                      border: 1px solid #b38f00;
+                      position: relative;
+                      overflow: hidden;
+                      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+                    ">
+                  <div style="
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        height: 1px;
+                        background: #997a00;
+                      "></div>
+                  <div style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 35%;
+                        width: 1px;
+                        background: #997a00;
+                      "></div>
+                  <div style="
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 35%;
+                        width: 1px;
+                        background: #997a00;
+                      "></div>
+                </div>
+              </div>
+
+              <!-- Account Number & Copy Button -->
+              <div class="mb-3 position-relative" style="z-index: 2">
+                <span class="d-block text-uppercase" style="
+                      font-size: 0.7rem;
+                      letter-spacing: 1.5px;
+                      color: rgba(255, 255, 255, 0.75);
+                    ">Nomor Rekening</span>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span id="norek-kavin" style="
+                        font-family:
+                          &quot;Courier New&quot;, Courier, monospace;
+                        font-size: 1.35rem;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                      ">7725789921</span>
+                  <button onclick="copyRekening('norek-kavin', this)"
+                    class="btn btn-sm rounded-pill px-3 py-1 text-white border-0" style="
+                        background: rgba(255, 255, 255, 0.22);
+                        backdrop-filter: blur(8px);
+                        font-size: 0.78rem;
+                        transition: all 0.3s;
+                      ">
+                    <i class="fa-regular fa-copy"></i> Salin
+                  </button>
+                </div>
+              </div>
+
+              <!-- Account Holder -->
+              <div class="position-relative" style="z-index: 2">
+                <span class="d-block text-uppercase" style="
+                      font-size: 0.7rem;
+                      letter-spacing: 1.5px;
+                      color: rgba(255, 255, 255, 0.75);
+                    ">Atas Nama</span>
+                <span class="fw-bold d-block text-uppercase" style="
+                      font-size: 1.05rem;
+                      letter-spacing: 1.5px;
+                      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+                    ">MUHAMMAD KAVIN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function copyRekening(id, btn) {
+            const text = document.getElementById(id).textContent.trim();
+            navigator.clipboard.writeText(text).then(() => {
+              const original = btn.innerHTML;
+              btn.innerHTML = '<i class="fa fa-check"></i> Tersalin!';
+              btn.style.background = "#28a745";
+              setTimeout(() => {
+                btn.innerHTML = original;
+                btn.style.background = "rgba(255,255,255,0.22)";
+              }, 2000);
+            });
+          }
+        </script>
+
+        <!-- <img src="https://drive.google.com/thumbnail?id=1zpkIJm3P4__rOsjzDQzyy7RcMZGf747V&sz=w1000"
+          class="img-fluid position-absolute left-0" style="z-index: 2; bottom: 0px" alt="" /> -->
+        <!-- <img src="https://drive.google.com/thumbnail?id=1fpfD3KCYPC7jstqfZUnCh4jN9-lYGQRv&sz=w1000"
+          class="img-fluid position-absolute top-0 left-0" style="z-index: 2" alt="" /> -->
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="min-width: 150px; top: -20px; left: -7%; width: 30%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=11SocFpn0rgTJMgAH6qFCKoA6w-anThKe" class="position-absolute"
+          style="min-width: 150px; top: -150px; right: -30%; width: 60%" alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1K5t3EeyWBX5AGxeyCNj1THKM_d7Lk9-x" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -150px;
+              left: -30%;
+              width: 60%;
+              transform: rotate(180deg);
+            " alt="" />
+        <img src="https://drive.google.com/thumbnail?id=1It6xhamllErCdLIagDUqP_foCs7o2_Bd" class="position-absolute"
+          style="
+              min-width: 150px;
+              bottom: -20px;
+              right: -7%;
+              width: 30%;
+              transform: rotate(200deg);
+            " alt="" />
+      </div>
+    </section>
+  </main>
+  <!-- <br /><br /><br /><br /> -->
+  <br /><br /><br /><br />
+
+  <nav class="position-fixed bottom-0 left-0 w-100" style="z-index: 3">
+    <div class="container bg-white h-100">
+      <ul class="d-flex list-unstyled m-0 py-2 px-2 justify-content-around">
+        <li>
+          <a class="text-primary d-flex flex-column align-items-center text-decoration-none" href=" #home"><i
+              class="fa fa-house"></i> Home</a>
+        </li>
+        <li>
+          <a class="text-primary d-flex flex-column align-items-center text-decoration-none" href=" #mempelai"><i
+              class="fa fa-heart"></i> Mempelai</a>
+        </li>
+        <li>
+          <a class="text-primary d-flex flex-column align-items-center text-decoration-none" href=" #acara"><i
+              class="fa fa-calendar"></i> Acara</a>
+        </li>
+        <li>
+          <a class="text-primary d-flex flex-column align-items-center text-decoration-none" href=" #galeri"><i
+              class="fa fa-image"></i> Galeri</a>
+        </li>
+        <li>
+          <a class="text-primary d-flex flex-column align-items-center text-decoration-none" href=" #rekening"><i
+              class="fa fa-credit-card"></i> Amplop</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <button id="musicToggle" class="shadow-sm btn btn-light rounded-circle position-fixed"
+    style="top: 50%; right: 20px; transform: translateY(-50%)">
+    <i class="fa fa-pause"></i>
+  </button>
+
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- <script src="./assets/bootstrap/js/bootstrap.min.js"></script> -->
+
+  <script>
+    // variable Event
+    const date = "2026-10-14 10:00:00";
+    const profilePicture = "assets/img-1%20(3).jpeg";
+  </script>
+
+  <script>
+    const showComment = () => {
+      fetch("/comments")
+        .then((json) => json.json())
+        .then((data) => {
+          let html = "";
+          data.forEach((d) => {
+            const date = new Date(d.created); // Format ISO (YYYY-MM-DD)
+            const dateFormat = date.toLocaleDateString("id-ID");
+
+            html += `<li class="border-b  mb-2 item-bottom">
                             <div class="d-flex align-items-center gap-3">
                                 <i class="fa-regular fa-comment-dots" style="font-size:3rem"></i>
                                 <div class="flex-grow-1">
@@ -1079,253 +847,254 @@
                                     </div>
                             </div>
                         </li>`;
-            });
-            $("#comments").empty().append(html);
           });
-      };
-      showComment();
-      $("#comment-form").on("submit", function (e) {
-        e.preventDefault();
-        const formData = new FormData();
-        const { value: namaVal } = e.target.nama;
-        const { value: keteranganVal } = e.target.keterangan;
-        const { value: tokenVal } = e.target._token;
-        formData.append("nama", namaVal);
-        formData.append("keterangan", keteranganVal);
-        formData.append("_token", tokenVal);
-        fetch("/comments", {
-          method: "POST",
-          body: formData,
+          $("#comments").empty().append(html);
+        });
+    };
+    showComment();
+    $("#comment-form").on("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData();
+      const { value: namaVal } = e.target.nama;
+      const { value: keteranganVal } = e.target.keterangan;
+      const { value: tokenVal } = e.target._token;
+      formData.append("nama", namaVal);
+      formData.append("keterangan", keteranganVal);
+      formData.append("_token", tokenVal);
+      fetch("/comments", {
+        method: "POST",
+        body: formData,
+      })
+        .then((json) => json.json())
+        .then((data) => {
+          showComment();
+          e.target.reset();
         })
-          .then((json) => json.json())
-          .then((data) => {
-            showComment();
-            e.target.reset();
-          })
-          .catch((err) => console.log(err));
-      });
+        .catch((err) => console.log(err));
+    });
 
-      $("#musicToggle").on("click", function () {
-        const audio = $("#myAudio").get(0);
-        if (audio.paused) {
-          audio.play();
-          $(this).find("i").removeClass("fa-play").addClass("fa-pause");
-        } else {
-          $(this).find("i").removeClass("fa-pause").addClass("fa-play");
-          audio.pause();
-        }
-      });
-    </script>
+    $("#musicToggle").on("click", function () {
+      const audio = $("#myAudio").get(0);
+      if (audio.paused) {
+        audio.play();
+        $(this).find("i").removeClass("fa-play").addClass("fa-pause");
+      } else {
+        $(this).find("i").removeClass("fa-pause").addClass("fa-play");
+        audio.pause();
+      }
+    });
+  </script>
 
-    <script>
-      var opt = {
+  <script>
+    var opt = {
+      distance: "50%",
+      opacity: "0",
+      interval: 100,
+      reset: false,
+      duration: 1000,
+      delay: 200,
+    };
+    ScrollReveal().reveal(".item-bottom", {
+      origin: "bottom",
+      ...opt,
+    });
+    var opt = {
+      distance: "50%",
+      opacity: 0,
+      interval: 100,
+      reset: false,
+      duration: 800,
+      delay: 100,
+      easing: "ease-in-out", // Membuat efek lebih dinamis
+      scale: 1.2, // Memperbesar saat masuk
+    };
+
+    ScrollReveal().reveal(".item-bottom-bounce", {
+      origin: "bottom",
+      ...opt,
+    });
+    document.querySelectorAll(".item-bottom-stack").forEach((item, index) => {
+      ScrollReveal().reveal(item, {
+        origin: "bottom",
         distance: "50%",
-        opacity: "0",
-        interval: 100,
-        reset: false,
+        opacity: 0,
         duration: 1000,
-        delay: 200,
-      };
-      ScrollReveal().reveal(".item-bottom", {
-        origin: "bottom",
-        ...opt,
-      });
-      var opt = {
-        distance: "50%",
-        opacity: 0,
-        interval: 100,
+        delay: index * 200, // Tambahkan delay berdasarkan urutan item
         reset: false,
-        duration: 800,
-        delay: 100,
-        easing: "ease-in-out", // Membuat efek lebih dinamis
-        scale: 1.2, // Memperbesar saat masuk
-      };
-
-      ScrollReveal().reveal(".item-bottom-bounce", {
-        origin: "bottom",
-        ...opt,
       });
-      document.querySelectorAll(".item-bottom-stack").forEach((item, index) => {
-        ScrollReveal().reveal(item, {
-          origin: "bottom",
-          distance: "50%",
-          opacity: 0,
-          duration: 1000,
-          delay: index * 200, // Tambahkan delay berdasarkan urutan item
-          reset: false,
-        });
-      });
+    });
 
-      var opt = {
-        distance: "50%",
-        opacity: 0,
-        scale: 0.9, // Menambahkan efek zoom
-        interval: 150,
-        reset: false,
-        duration: 1200,
-        delay: 100,
-      };
+    var opt = {
+      distance: "50%",
+      opacity: 0,
+      scale: 0.9, // Menambahkan efek zoom
+      interval: 150,
+      reset: false,
+      duration: 1200,
+      delay: 100,
+    };
 
-      ScrollReveal().reveal(".item-bottom-zoom", {
-        origin: "bottom",
-        ...opt,
-      });
-    </script>
+    ScrollReveal().reveal(".item-bottom-zoom", {
+      origin: "bottom",
+      ...opt,
+    });
+  </script>
 
-    <script>
-      // Timeout schedule
-      // Set target date
-      const targetDate = new Date(date).getTime();
-      const eventDateElement = document.querySelector("[data-id='event-date']");
-      eventDateElement.textContent = new Date(date).toLocaleDateString(
-        "id-ID",
-        {
-          day: "numeric",
-          weekday: "long",
-          year: "numeric",
-          month: "long",
-        },
-      );
-      // Update countdown every second
-      const countdownInterval = setInterval(() => {
-        const now = new Date().getTime();
-        const timeRemaining = targetDate - now;
+  <script>
+    // Timeout schedule
+    // Set target date
+    const targetDate = new Date(date).getTime();
+    const eventDateElement = document.querySelector("[data-id='event-date']");
+    eventDateElement.textContent = new Date(date).toLocaleDateString(
+      "id-ID",
+      {
+        day: "numeric",
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+      },
+    );
+    // Update countdown every second
+    const countdownInterval = setInterval(() => {
+      const now = new Date().getTime();
+      const timeRemaining = targetDate - now;
 
-        if (timeRemaining > 0) {
-          const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-          );
-          const minutes = Math.floor(
-            (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
-          );
-          const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-          // Update HTML elements
-          document.getElementById("days").textContent = days
-            .toString()
-            .padStart(2, "0");
-          document.getElementById("hours").textContent = hours
-            .toString()
-            .padStart(2, "0");
-          document.getElementById("minutes").textContent = minutes
-            .toString()
-            .padStart(2, "0");
-          document.getElementById("seconds").textContent = seconds
-            .toString()
-            .padStart(2, "0");
-        } else {
-          // Clear the interval and display a message or perform an action
-          clearInterval(countdownInterval);
-          document.getElementById("days").textContent = "00";
-          document.getElementById("hours").textContent = "00";
-          document.getElementById("minutes").textContent = "00";
-          document.getElementById("seconds").textContent = "00";
-        }
-      }, 1000);
-    </script>
-
-    <script type="text/javascript">
-      $(function () {
-        var snowflakeURl = [
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-          "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
-        ];
-
-        var container = $("#content");
-        visualWidth = container.width();
-        visualHeight = container.height();
-
-        function snowflake() {
-          // Snowflake container
-          var $flakeContainer = $("#snowflake");
-
-          // Six random graphs
-          function getImagesName() {
-            return snowflakeURl[[Math.floor(Math.random() * 7)]];
-          }
-          // Create a snowflake element
-          function createSnowBox() {
-            var url = getImagesName();
-
-            return $('<div class="snowbox" />')
-              .css({
-                width: 70,
-                height: 75,
-                position: "fixed",
-                backgroundSize: "cover",
-                zIndex: 9,
-                backgroundImage: "url(" + url + ")",
-              })
-              .addClass("snowRoll");
-          }
-          // Began to float flowers
-          setInterval(function () {
-            // Trajectory of motion
-            var startPositionLeft = Math.random() * visualWidth - 100,
-              startOpacity = 1,
-              endPositionTop = visualHeight - 40,
-              endPositionLeft = startPositionLeft - 100 + Math.random() * 500,
-              duration = visualHeight * 10 + Math.random() * 5000;
-
-            // Random transparency, no less than 0.5
-            var randomStart = Math.random();
-            randomStart = randomStart < 0.5 ? startOpacity : randomStart;
-            // Create a snowflake
-            var $flake = createSnowBox();
-            // Design start position
-            $flake.css({
-              left: startPositionLeft,
-              opacity: randomStart,
-            });
-            // Add to container
-            $flakeContainer.append($flake);
-
-            //jquery does not introduce other js writing methods
-            $flake.animate(
-              {
-                top: endPositionTop,
-                left: endPositionLeft,
-                opacity: 0.7,
-              },
-              duration,
-              "linear",
-              function () {
-                $(this).remove(); //Delete after end
-              },
-            );
-          }, 1200); // default 200
-        }
-        snowflake();
-        //Execution function
-
-        const profilePictureEl = document.querySelectorAll(
-          "[data-id='profile-picture']",
+      if (timeRemaining > 0) {
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
         );
-        profilePictureEl.forEach((el) => {
-          if (el.tagName === "IMG") {
-            el.attributes.src.value = profilePicture;
-          } else {
-            el.style.backgroundImage =
-              "linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('" +
-              profilePicture +
-              "')";
-          }
-        });
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Update HTML elements
+        document.getElementById("days").textContent = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").textContent = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").textContent = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").textContent = seconds
+          .toString()
+          .padStart(2, "0");
+      } else {
+        // Clear the interval and display a message or perform an action
+        clearInterval(countdownInterval);
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+      }
+    }, 1000);
+  </script>
+
+  <script type="text/javascript">
+    $(function () {
+      var snowflakeURl = [
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+        "https://app.sangmempelai.id/webview/template/front/falling-effect/wavy-sfe-07-1.png",
+      ];
+
+      var container = $("#content");
+      visualWidth = container.width();
+      visualHeight = container.height();
+
+      function snowflake() {
+        // Snowflake container
+        var $flakeContainer = $("#snowflake");
+
+        // Six random graphs
+        function getImagesName() {
+          return snowflakeURl[[Math.floor(Math.random() * 7)]];
+        }
+        // Create a snowflake element
+        function createSnowBox() {
+          var url = getImagesName();
+
+          return $('<div class="snowbox" />')
+            .css({
+              width: 70,
+              height: 75,
+              position: "fixed",
+              backgroundSize: "cover",
+              zIndex: 9,
+              backgroundImage: "url(" + url + ")",
+            })
+            .addClass("snowRoll");
+        }
+        // Began to float flowers
+        setInterval(function () {
+          // Trajectory of motion
+          var startPositionLeft = Math.random() * visualWidth - 100,
+            startOpacity = 1,
+            endPositionTop = visualHeight - 40,
+            endPositionLeft = startPositionLeft - 100 + Math.random() * 500,
+            duration = visualHeight * 10 + Math.random() * 5000;
+
+          // Random transparency, no less than 0.5
+          var randomStart = Math.random();
+          randomStart = randomStart < 0.5 ? startOpacity : randomStart;
+          // Create a snowflake
+          var $flake = createSnowBox();
+          // Design start position
+          $flake.css({
+            left: startPositionLeft,
+            opacity: randomStart,
+          });
+          // Add to container
+          $flakeContainer.append($flake);
+
+          //jquery does not introduce other js writing methods
+          $flake.animate(
+            {
+              top: endPositionTop,
+              left: endPositionLeft,
+              opacity: 0.7,
+            },
+            duration,
+            "linear",
+            function () {
+              $(this).remove(); //Delete after end
+            },
+          );
+        }, 1200); // default 200
+      }
+      snowflake();
+      //Execution function
+
+      const profilePictureEl = document.querySelectorAll(
+        "[data-id='profile-picture']",
+      );
+      profilePictureEl.forEach((el) => {
+        if (el.tagName === "IMG") {
+          el.attributes.src.value = profilePicture;
+        } else {
+          // el.style.backgroundImage =
+          //   "linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('" +
+          //   profilePicture +
+          //   "')";
+        }
       });
-    </script>
-    <script>
-      $("body").addClass("overflow-hidden");
-      $("#open-letter").click(function () {
-        $(".first-view").addClass("hide-view");
-        $("body").removeClass("overflow-hidden");
-        $("#myAudio").get(0).play();
-      });
-    </script>
-  </body>
+    });
+  </script>
+  <script>
+    $("body").addClass("overflow-hidden");
+    $("#open-letter").click(function () {
+      $(".first-view").addClass("hide-view");
+      $("body").removeClass("overflow-hidden");
+      $("#myAudio").get(0).play();
+    });
+  </script>
+</body>
+
 </html>
